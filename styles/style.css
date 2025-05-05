@@ -1,0 +1,123 @@
+body {
+	padding: 20px;
+	font-family: 'DMSans', sans-serif;
+	font-size: 16px;
+	color: #000;
+	background-color: #FFF;
+}
+
+.container {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.navbar {
+	width: 100%;
+	padding: 20px 60px;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 50;
+}
+
+.navbar .container{
+	padding: 0 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 110px;
+}
+
+.nav-links {
+	display: flex;
+	gap: 48px;
+}
+
+.nav-links li a {
+	font-size: 16px;
+	line-height: 100%;
+	color: #FFF;
+}
+
+.btn-outline,
+ .btn-filled {
+	padding: 12px 20px;
+	color: #FFF;
+	font-size: 16px;
+	line-height: 100%;
+	font-weight: 600;
+}
+
+.auth-buttons .btn-outline {
+	margin-right: 12px;
+	background: transparent;
+}
+
+.btn-filled {
+	border-radius: 40px;
+	background-color: #000;
+	color: #FFF;
+}
+
+.burger {
+	display: none;
+}
+
+.hero {
+	position: relative;
+	padding: 220px 80px 40px;
+	background-image: url(../img/hero-img.jpg);
+	background-size: cover;
+	background-size: cover;
+  background-position: center;
+  color: white;
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+.hero .overlay {
+	background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+}
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 66px;
+  font-weight: 600;
+	line-height: 120%;
+	margin-bottom: 24px;
+}
+
+.hero-content p {
+	width: 608px;
+	font-size: 16px;
+	padding-bottom: 40px;
+}
+
+.hero-stats {
+	width: 100%;
+	margin-top: 140px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+}
+
+.hero-stats span {
+	font-size: 28px;
+	line-height: 100%;
+	margin-bottom: 4px;
+}
+

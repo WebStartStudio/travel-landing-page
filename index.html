@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Norway</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+					<img src="./img/logo.svg" alt="logo">
+				</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <button class="btn-outline">Login</button>
+          <button class="btn-filled">Register</button>
+        </div>
+        <div class="burger">&#9776;</div>
+      </div>
+    </header>
+    <main class="page">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1>Discover Norway’s <br /><span>Breathtaking Beauty</span></h1>
+          <p>
+            Embark on a journey through Norway’s stunning fjords, vibrant cities, and Northern Lights. Your gateway to unforgettable experiences!
+          </p>
+          <button class="btn-filled">Explore now</button>
+          <div class="hero-stats">
+            <div><span>3k+</span><br />Destinations</div>
+            <div><span>8+</span><br />Years of Expertise</div>
+            <div><span>10k+</span><br />Happy Travelers</div>
+            <div><span>4.5</span><br />User Rating</div>
+          </div>
+        </div>
+      </section>
+      <!-- City Carousel Section -->
+      <section class="carousel-section">
+        <div class="container">
+          <h2>Exploring Norway’s breathtaking scenery & landscapes</h2>
+          <p>
+            Discover Norway’s Wonders Effortlessly — Your shortcut to one-click
+            adventures!
+          </p>
+          <div class="carousel" id="cityCarousel">
+            <div class="carousel-track">
+              <div class="carousel-item">
+                <img src="images/oslo.jpg" alt="Oslo" />
+                <div class="caption">Oslo<br /><small>Norway</small></div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/bergen.jpg" alt="Bergen" />
+                <div class="caption">Bergen<br /><small>Norway</small></div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/tromso.jpg" alt="Tromsø" />
+                <div class="caption">Tromsø<br /><small>Norway</small></div>
+              </div>
+            </div>
+            <button
+              class="carousel-btn prev"
+              onclick="moveSlide(-1, 'cityCarousel')"
+            >
+              &#10094;
+            </button>
+            <button
+              class="carousel-btn next"
+              onclick="moveSlide(1, 'cityCarousel')"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="how-it-works">
+        <div class="container two-columns">
+          <div class="left">
+            <h2>How Our Platform Works</h2>
+            <p>
+              Set your travel goals, optimize your itinerary, and explore Norway
+              with ease.
+            </p>
+            <ul>
+              <li>✅ Choose Your Destination</li>
+              <li>🎯 Personalize Your Trip</li>
+              <li>🚀 Travel Effortlessly</li>
+            </ul>
+            <button class="btn-filled">Book your spot</button>
+          </div>
+          <div class="right">
+            <img src="images/lake.jpg" alt="Norway lake view" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
